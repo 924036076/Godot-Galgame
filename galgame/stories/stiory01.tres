@@ -1,0 +1,84 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/EXP-System-Dialog/Resource_EditorStory/EXP_EditorStory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+TYPE = "EXP_Story_editor"
+names = {
+"story01": 1
+}
+story = {
+1: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"name": "story01",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 40, 200 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>【茉子】</speaker>
+<character>道歉</character>
+<show>
+<center>
+<audio>mak002_035</audio>
+<dialog>非常抱歉，非常抱歉！  真的——，非常抱歉</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 40, 360 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>【将臣】</speaker>
+<dialog>不、不，没事。完全不用在意。也没有特别痛的地方</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 40, 520 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>【将臣】</speaker>
+<dialog>脖子不痛，头也不感到沉重，当身对身体没什么影响。倒不如说赚到了</dialog>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 40, 680 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>【茉子】</speaker>
+<character>避开视线1</character>
+<show>
+<center>
+<audio>mak002_036</audio>
+<dialog>啊、啊哈。。。因为这种事而被感谢感觉非常难以言喻啊</dialog>",
+"type": "line"
+}
+}
+}
+}
+available_dids = [  ]
+groups = [  ]

@@ -1,0 +1,110 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/EXP-System-Dialog/Resource_BakedStory/EXP_BakedStory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+TYPE = "EXP_Baked_Story"
+story = {
+1: {
+"nodes": {
+1: {
+"links": {
+
+},
+"text": "<<setname|【茉子】>>
+<<setsprite|center|res://galgame/assets/art/character/茉子/道歉.png|res://galgame/assets/audio/voice/茉子/mak002_035.ogg>>
+非常抱歉，非常抱歉！  真的——，非常抱歉
+<<setname|【将臣】>>
+不、不，没事。完全不用在意。也没有特别痛的地方
+<<setname| >>
+脖子不痛，头也不感到沉重，当身对身体没什么影响。
+倒不如说赚到了
+<<setname|【将臣】>>
+倒不如说。。。多谢款待？
+<<setname|【茉子】>>
+<<setsprite|center|res://galgame/assets/art/character/茉子/避开视线1.png|res://galgame/assets/audio/voice/茉子/mak002_036.ogg>>
+啊、啊哈。。。因为这种事而被感谢感觉非常难以言喻啊
+<<setname|【将臣】>>
+从小到大父母教育我做一个【能向人好好表达谢意的人】
+<<setname|【茉子】>>
+<<setsprite|center|res://galgame/assets/art/character/茉子/思考.png|res://galgame/assets/audio/voice/茉子/mak002_037.ogg>>
+总感觉意思稍微有点不对
+<<setname|【安晴】>>
+<<setsprite|center|res://galgame/assets/art/character/安晴/aq01.png|res://galgame/assets/audio/voice/安晴/yas002_006.ogg>>
+将臣君起来的很早啊。抱歉，我还以为你会再睡会的
+<<setname|【安晴】>>
+<<setsprite|center|res://galgame/assets/art/character/安晴/aq01.png|res://galgame/assets/audio/voice/安晴/yas002_007.ogg>>
+总之，从我开始重新介绍一下吧
+<<setname|【安晴】>>
+<<setsprite|>>
+<<setsprite|left|res://galgame/assets/art/character/茉子/微笑.png|>>
+<<setsprite|right|res://galgame/assets/art/character/安晴/aq01.png|res://galgame/assets/audio/voice/安晴/yas002_008.ogg>>
+这位是，拔出丛雨丸的有地将臣君。昨天开始就在这个家里生活了
+<<setname|【将臣】>>
+我是有地将臣。请多关照
+<<setname|【安晴】>>
+<<setsprite|right|res://galgame/assets/art/character/安晴/aq02.png|res://galgame/assets/audio/voice/安晴/yas002_009.ogg>>
+这位是，长陆茉子小姐。芳奈同龄的青梅竹马，从小时后起就和芳乃很要好
+<<setname|【茉子】>>
+<<setsprite|left|res://galgame/assets/art/character/茉子/说话.png|res://galgame/assets/audio/voice/茉子/mak002_038.ogg>>
+我是长陆茉子。请多关照
+<<setname|【安晴】>>
+<<setsprite|right|res://galgame/assets/art/character/安晴/aq03.png|res://galgame/assets/audio/voice/安晴/yas002_010.ogg>>
+我的妻子早亡，本来我应该要做些什么的，但我不擅长做家务。真的，说来惭愧
+<<setname|【安晴】>>
+<<setsprite|right|res://galgame/assets/art/character/安晴/aq01.png|res://galgame/assets/audio/voice/安晴/yas002_011.ogg>>
+我的家里已经是，没有茉子君就已经维持不下去的状态了
+<<setname|【茉子】>>
+<<setsprite|left|res://galgame/assets/art/character/茉子/侧身01.png|res://galgame/assets/audio/voice/茉子/mak002_039.ogg>>
+请别放在心上。我很乐意去做家务的
+<<setname|【安晴】>>
+<<setsprite|right|res://galgame/assets/art/character/安晴/aq02.png|res://galgame/assets/audio/voice/安晴/yas002_012.ogg>>
+茉子君的家族，一直是在侍奉朝武家的。话虽如此，本来不是帮忙做家务而是担任护卫的呢
+<<setname|【将臣】>>
+护卫，吗。。？
+<<setname|【茉子】>>
+<<setsprite|>>
+<<setsprite|center|res://galgame/assets/art/character/茉子/满足.png|res://galgame/assets/audio/voice/茉子/mak002_040.ogg>>
+<<setnear|中>>
+长陆家代代，都作为忍者在暗中保护巫女殿下
+<<setname|【茉子】>>
+<<setsprite|center|res://galgame/assets/art/character/茉子/微笑.png|res://galgame/assets/audio/voice/茉子/mak002_041.ogg>>
+现在已经不是日常都需要护卫的危险时代了，所以，平时就做些家务
+<<setname|【将臣】>>
+所以才有苦无，原来如此
+<<setname|【将臣】>>
+。。。原来如此？
+<<setname|>>
+一瞬间差点接受了，果然还是很奇怪啊。
+忍者。。。。
+<<setname|【将臣】>>
+那么说来，打开门的时候的那个圆木桩，难道说是那个？
+<<setname|【茉子】>>
+<<setsprite|center|res://galgame/assets/art/character/茉子/说话.png|res://galgame/assets/audio/voice/茉子/mak002_042.ogg>>
+是替身之术，毕竟我是忍者啊
+<<setname|【将臣】>>
+。。。忍者。。
+<<setname|【将臣】>>
+知道花蝶扇（不知火舞的飞行道具）吗？
+<<setname|【茉子】>>
+<<setsprite|center|res://galgame/assets/art/character/茉子/侧身04.png|res://galgame/assets/audio/voice/茉子/mak002_043.ogg>>
+虽然很可惜，还没有能够藏下扇子的胸部
+<<setname|【茉子】>>
+<<setsprite|center|res://galgame/assets/art/character/茉子/微笑.png|res://galgame/assets/audio/voice/茉子/mak002_044.ogg>>
+忍者这些不是在开玩笑和说谎哦。我家，就是这样的家族
+<<setname|【将臣】>>
+不，我也没认为你是在说谎
+<<setname|>>
+和丛雨酱比起来，大概就见怪不怪了吧。
+虽然这样但是。。。
+<<setname|>>
+拔出传说中的刀，看见幽灵一样的孩子、订下婚约、最后是现代的忍者吗。
+我的人生，仅仅一天就变得这么幽默了啊。。。"
+}
+}
+}
+}
+names = {
+"story02": 1
+}
