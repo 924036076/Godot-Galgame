@@ -2,7 +2,6 @@ extends Control
 
 func _on_start_pressed():
 	Changescene.changescene("res://galgame/scenes/main.tscn")
-	Bgm.replay()
 	pass # Replace with function body.
 
 func _on_continue_pressed():

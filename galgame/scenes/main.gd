@@ -45,9 +45,9 @@ func _on_set_sprite(msg: String):
 		if img.visible == false:
 			img.visible = true
 		
+		# 人物图片
 		if list[2] != "":
 			var ogg = load(list[2])
-			print(list[2])
 			ogg.loop = false
 			audio_player.stream = ogg
 			audio_player.play()
@@ -64,13 +64,15 @@ func _on_set_option(dict: Dictionary):
 		var option_btn = option.instance()
 		option_list.add_child(option_btn)
 		option_btn.set_dialog(dict[item])
-		signal_mgr.register("on_option_clicked", self, item)
+		option_btn.connect("on_option_clicked", self, item)
 
 func _on_set_finsh():
 	print("结束")
 
 func restart():
 	_on_click_option()
+	galgame_reader.index = 0
+	Bgm.replay()
 	Changescene.changescene("res://galgame/scenes/main.tscn")
 
 func tomenu():

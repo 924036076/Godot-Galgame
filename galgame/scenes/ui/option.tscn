@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://galgame/assets/art/ui/select_on.png" type="Texture" id=1]
 [ext_resource path="res://galgame/scenes/ui/option.gd" type="Script" id=2]
 [ext_resource path="res://galgame/assets/font/造字工房悦圆.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://galgame/assets/art/ui/select_normal.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -12,7 +13,9 @@ font_data = ExtResource( 3 )
 margin_right = 1221.0
 margin_bottom = 180.0
 rect_min_size = Vector2( 0, 180 )
-texture_normal = ExtResource( 1 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 1 )
 expand = true
 stretch_mode = 4
 script = ExtResource( 2 )
