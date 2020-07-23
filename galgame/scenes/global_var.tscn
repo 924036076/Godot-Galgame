@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://galgame/assets/audio/bgm/Famishin-茉子の日常.ogg" type="AudioStream" id=1]
+[ext_resource path="res://galgame/scenes/global_var.gd" type="Script" id=2]
+
+[node name="global_var" type="Node"]
+script = ExtResource( 2 )
+
+[node name="bgm" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 960, 540 )
+stream = ExtResource( 1 )
+autoplay = true
+
+[node name="voice" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 960, 540 )
+
+[node name="tween" type="Tween" parent="."]

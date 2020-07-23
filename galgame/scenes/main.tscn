@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://galgame/assets/art/background/朝武_リビングA.png" type="Texture" id=1]
 [ext_resource path="res://galgame/assets/art/character/茉子/微笑.png" type="Texture" id=2]
@@ -6,7 +6,13 @@
 [ext_resource path="res://galgame/assets/art/ui/sqscrmask.png" type="Texture" id=4]
 [ext_resource path="res://galgame/assets/art/character/茉子/满足.png" type="Texture" id=5]
 [ext_resource path="res://galgame/scenes/main.gd" type="Script" id=6]
+[ext_resource path="res://galgame/assets/art/ui/touchicon_option.png" type="Texture" id=7]
 [ext_resource path="res://galgame/assets/font/造字工房悦圆.otf" type="DynamicFontData" id=8]
+[ext_resource path="res://galgame/assets/art/ui/touchicon_auto.png" type="Texture" id=9]
+[ext_resource path="res://galgame/assets/art/ui/touchicon_load.png" type="Texture" id=10]
+[ext_resource path="res://galgame/assets/art/ui/touchicon_save.png" type="Texture" id=11]
+[ext_resource path="res://galgame/assets/art/ui/touchicon_log.png" type="Texture" id=12]
+[ext_resource path="res://galgame/scenes/ui/system_panel.tscn" type="PackedScene" id=13]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -95,6 +101,7 @@ __meta__ = {
 
 [node name="dialog_bg" type="TextureButton" parent="dialog"]
 modulate = Color( 1, 1, 1, 0.423529 )
+light_mask = 0
 anchor_top = 0.636
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -149,7 +156,59 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="audio_player" type="AudioStreamPlayer2D" parent="."]
-position = Vector2( 960, 540 )
-volume_db = 5.0
+[node name="touch_icon" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -575.009
+margin_top = -100.0
+margin_right = -59.0088
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="log" type="TextureButton" parent="touch_icon"]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 12 )
+expand = true
+
+[node name="save" type="TextureButton" parent="touch_icon"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 11 )
+expand = true
+
+[node name="load" type="TextureButton" parent="touch_icon"]
+margin_left = 208.0
+margin_right = 308.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 10 )
+expand = true
+
+[node name="auto" type="TextureButton" parent="touch_icon"]
+margin_left = 312.0
+margin_right = 412.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 9 )
+expand = true
+
+[node name="system" type="TextureButton" parent="touch_icon"]
+margin_left = 416.0
+margin_right = 516.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 7 )
+expand = true
+
+[node name="system_panel" parent="." instance=ExtResource( 13 )]
+visible = false
 [connection signal="pressed" from="dialog/dialog_bg" to="." method="_on_dialog_bg_pressed"]
+[connection signal="pressed" from="touch_icon/system" to="." method="_on_system_pressed"]
