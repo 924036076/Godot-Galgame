@@ -8,14 +8,9 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Reference",
-"class": "DialogPlayer",
-"language": "GDScript",
-"path": "res://galgame/scripts/dialog.gd"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"DialogPlayer": ""
+
 }
 
 [application]
@@ -28,6 +23,7 @@ config/icon="res://galgame/assets/art/ui/aboutdialog.png"
 
 galgame_reader="*res://galgame/scripts/galgame_reader.gd"
 signal_mgr="*res://galgame/scripts/signal_mgr.gd"
+file_mgr="*res://galgame/scripts/file_mgr.gd"
 global_var="*res://galgame/scenes/global_var.tscn"
 change_scene="*res://galgame/scenes/changescene.tscn"
 

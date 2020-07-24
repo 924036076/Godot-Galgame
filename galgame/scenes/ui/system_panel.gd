@@ -17,3 +17,11 @@ func update():
 	text_speed_slider.value = global_var.text_speed_value
 	bgm_slider.value = global_var.bgm_value
 	voice_slider.value = global_var.voice_value
+
+
+func _on_menu_pressed():
+	change_scene.changescene("res://galgame/scenes/menu.tscn")
+
+func _on_resume_pressed():
+	global_var.save_global_var()
+	visible = false
