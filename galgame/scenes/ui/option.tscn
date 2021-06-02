@@ -39,4 +39,5 @@ clip_text = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="pressed" from="." to="." method="_on_option_pressed"]

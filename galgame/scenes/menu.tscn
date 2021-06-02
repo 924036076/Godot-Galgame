@@ -113,6 +113,7 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="pressed" from="btn/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="btn/continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="btn/about" to="." method="_on_about_pressed"]

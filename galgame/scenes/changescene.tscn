@@ -19,11 +19,12 @@ tracks/0/keys = {
 }
 
 [node name="changescene" type="CanvasLayer"]
+layer = 2
 script = ExtResource( 1 )
 
 [node name="fade" type="ColorRect" parent="."]
 visible = false
-modulate = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
+modulate = Color( 0.0666667, 0.0666667, 0.0666667, 0 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {

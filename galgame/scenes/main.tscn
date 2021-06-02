@@ -210,5 +210,7 @@ expand = true
 
 [node name="system_panel" parent="." instance=ExtResource( 13 )]
 visible = false
+
 [connection signal="pressed" from="dialog/dialog_bg" to="." method="_on_dialog_bg_pressed"]
+[connection signal="pressed" from="touch_icon/save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="touch_icon/system" to="." method="_on_system_pressed"]

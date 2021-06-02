@@ -2,7 +2,7 @@
 extends Node
 
 func register(signal_name: String, target: Object, method: String):
-	if !has_user_signal(signal_name): add_user_signal(signal_name)	
+	if !has_user_signal(signal_name): add_user_signal(signal_name)
 	# warning-ignore:return_value_discarded
 	connect(signal_name, target, method)
 

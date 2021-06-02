@@ -8,7 +8,7 @@ func save_file(data):
 	var directory: Directory = Directory.new()
 	if !directory.dir_exists(SAVE_DIR):
 		directory.make_dir_recursive(SAVE_DIR)
-	var file: File = File.new() 
+	var file: File = File.new()
 	var err = file.open_encrypted_with_pass(save_path, File.WRITE, password)
 	if err == OK:
 		file.store_var(data)

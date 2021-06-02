@@ -1,7 +1,7 @@
 extends Control
 
 func _on_start_pressed():
-	change_scene.changescene("res://galgame/scenes/main.tscn")
+	change_scene.changescene(change_scene.scene.main)
 	pass # Replace with function body.
 
 func _on_continue_pressed():
