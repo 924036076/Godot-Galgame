@@ -1,0 +1,521 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://galgame/assets/art/ui/sqscrmask.png" type="Texture" id=1]
+[ext_resource path="res://galgame/assets/art/ui/touchicon_hide.png" type="Texture" id=2]
+[ext_resource path="res://galgame/assets/art/background/街_目抜き通りA.png" type="Texture" id=4]
+[ext_resource path="res://galgame/scenes/ui/scroll_container.gd" type="Script" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="Theme" id=3]
+HScrollBar/icons/decrement = null
+HScrollBar/icons/decrement_highlight = null
+HScrollBar/icons/increment = null
+HScrollBar/icons/increment_highlight = null
+HScrollBar/styles/grabber = null
+HScrollBar/styles/grabber_highlight = null
+HScrollBar/styles/grabber_pressed = null
+HScrollBar/styles/scroll = SubResource( 1 )
+HScrollBar/styles/scroll_focus = null
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/styles/grabber = null
+VScrollBar/styles/grabber_highlight = null
+VScrollBar/styles/grabber_pressed = null
+VScrollBar/styles/scroll = SubResource( 2 )
+VScrollBar/styles/scroll_focus = null
+
+[node name="save_load_panel" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 3 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 416.661, 134.153 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="bg" type="ColorRect" parent="."]
+self_modulate = Color( 0.180392, 0.180392, 0.180392, 0.411765 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.00226
+margin_top = -8.00903
+margin_right = -2.0022
+margin_bottom = -8.00903
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title_btn" type="TextureButton" parent="."]
+margin_top = 43.7568
+margin_right = 230.0
+margin_bottom = 118.757
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Label" parent="title_btn"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 3.0
+margin_top = -29.5
+margin_right = 203.0
+margin_bottom = 26.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title_img" type="TextureRect" parent="title_btn"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -89.0
+margin_top = -46.5
+margin_bottom = 44.5
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scroll_container" type="ScrollContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -778.825
+margin_top = -405.102
+margin_right = 785.175
+margin_bottom = 455.898
+follow_focus = true
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="grid" type="GridContainer" parent="scroll_container"]
+margin_top = -1465.0
+margin_right = 1560.0
+margin_bottom = 2614.0
+rect_clip_content = true
+custom_constants/vseparation = 23
+custom_constants/hseparation = 60
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button1" type="TextureRect" parent="scroll_container/grid"]
+margin_right = 480.0
+margin_bottom = 270.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button2" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_right = 1020.0
+margin_bottom = 270.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button3" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_right = 1560.0
+margin_bottom = 270.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button4" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 293.0
+margin_right = 480.0
+margin_bottom = 563.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button5" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 293.0
+margin_right = 1020.0
+margin_bottom = 563.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button6" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 293.0
+margin_right = 1560.0
+margin_bottom = 563.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button7" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 586.0
+margin_right = 480.0
+margin_bottom = 856.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button8" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 586.0
+margin_right = 1020.0
+margin_bottom = 856.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button9" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 586.0
+margin_right = 1560.0
+margin_bottom = 856.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button10" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 879.0
+margin_right = 480.0
+margin_bottom = 1149.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button11" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 879.0
+margin_right = 1020.0
+margin_bottom = 1149.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button12" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 879.0
+margin_right = 1560.0
+margin_bottom = 1149.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button13" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 1172.0
+margin_right = 480.0
+margin_bottom = 1442.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button14" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 1172.0
+margin_right = 1020.0
+margin_bottom = 1442.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button15" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 1172.0
+margin_right = 1560.0
+margin_bottom = 1442.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button16" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 1465.0
+margin_right = 480.0
+margin_bottom = 1735.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button17" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 1465.0
+margin_right = 1020.0
+margin_bottom = 1735.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button18" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 1465.0
+margin_right = 1560.0
+margin_bottom = 1735.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button19" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 1758.0
+margin_right = 480.0
+margin_bottom = 2028.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button20" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 1758.0
+margin_right = 1020.0
+margin_bottom = 2028.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button21" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 1758.0
+margin_right = 1560.0
+margin_bottom = 2028.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button22" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 2051.0
+margin_right = 480.0
+margin_bottom = 2321.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button23" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 2051.0
+margin_right = 1020.0
+margin_bottom = 2321.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button24" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 2051.0
+margin_right = 1560.0
+margin_bottom = 2321.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button25" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 2344.0
+margin_right = 480.0
+margin_bottom = 2614.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button26" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 2344.0
+margin_right = 1020.0
+margin_bottom = 2614.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button27" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 2344.0
+margin_right = 1560.0
+margin_bottom = 2614.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button28" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 2637.0
+margin_right = 480.0
+margin_bottom = 2907.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button29" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 2637.0
+margin_right = 1020.0
+margin_bottom = 2907.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button30" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 2637.0
+margin_right = 1560.0
+margin_bottom = 2907.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button31" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 2930.0
+margin_right = 480.0
+margin_bottom = 3200.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button32" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 2930.0
+margin_right = 1020.0
+margin_bottom = 3200.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button33" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 2930.0
+margin_right = 1560.0
+margin_bottom = 3200.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button34" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 3223.0
+margin_right = 480.0
+margin_bottom = 3493.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button35" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 3223.0
+margin_right = 1020.0
+margin_bottom = 3493.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button36" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 3223.0
+margin_right = 1560.0
+margin_bottom = 3493.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button37" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 3516.0
+margin_right = 480.0
+margin_bottom = 3786.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button38" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 3516.0
+margin_right = 1020.0
+margin_bottom = 3786.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button39" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 3516.0
+margin_right = 1560.0
+margin_bottom = 3786.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button40" type="TextureRect" parent="scroll_container/grid"]
+margin_top = 3809.0
+margin_right = 480.0
+margin_bottom = 4079.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button41" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 540.0
+margin_top = 3809.0
+margin_right = 1020.0
+margin_bottom = 4079.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="button42" type="TextureRect" parent="scroll_container/grid"]
+margin_left = 1080.0
+margin_top = 3809.0
+margin_right = 1560.0
+margin_bottom = 4079.0
+rect_min_size = Vector2( 480, 270 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[connection signal="gui_input" from="scroll_container" to="scroll_container" method="_on_ScrollContainer_gui_input"]

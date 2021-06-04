@@ -46,7 +46,7 @@ func set_text_speed_value(value):
 	tween.playback_speed = value
 	text_speed_value = value
 
-func dotween(target: Object, prop: String, initial_val: float, final_val: float, duration: float):
+func dotween(target: Object, prop: NodePath, initial_val, final_val, duration: float):
 	# warning-ignore:return_value_discarded
 	tween.interpolate_property(target, prop, initial_val, final_val, duration, Tween.TRANS_LINEAR, Tween.TRANS_LINEAR)
 	# warning-ignore:return_value_discarded
